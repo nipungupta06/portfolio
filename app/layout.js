@@ -9,23 +9,24 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang="en">
+      
       <body>
         <header className="">
           <nav className="flex justify-around items-center h-20 ">
-            <div className="left text-2xl">Portfolio.</div>
-            <div className="right">
+            <div className="left text-2xl">Nipun's Portfolio</div>
+            <div className="right md:block hidden">
               <ul className="flex justify-center ">
                 <li className="mx-4"><Link className="linknav" href="/">Home</Link></li>
                 <li className="mx-4"><Link className="linknav" href="#about">About</Link></li>
                 <li className="mx-4"><Link className="linknav" href="#skills">Skills</Link></li>
                 <li className="mx-4"><Link className="linknav" href="#certificates">Certificates</Link></li>
-                <li className="mx-4"><Link className="linknav" href="#contact-me">Contact Me</Link></li>
+                
               </ul>
             </div>
           </nav>
         </header>
         {children}
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
       </body>
     </html>
   )
